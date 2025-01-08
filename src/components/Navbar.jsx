@@ -7,7 +7,7 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen) //!false
     }
     return (
-        <nav className="bg-gray-800 p-4">
+        <nav className="bg-gray-800 p-4 fixed top-0 left-0 w-full">
             <div className="flex items-center justify-between">
                 <div className="text-2xl font-bold ml-10">
                     <span className="text-yellow-500">Port</span>
@@ -30,20 +30,18 @@ function Navbar() {
                     </button>
                 </div>
                 <ul className="hidden md:flex space-x-4">
-                    <li><a href="#" className="text-white hover:font-bold hover:text-yellow-500 mr-5">About</a></li>
-                    <li><a href="#" className="text-white hover:font-bold hover:text-yellow-500 mr-5">Profile</a></li>
-                    <li><a href="#" className="text-white hover:font-bold hover:text-yellow-500 mr-5">Certificate</a></li>
-                    <li><a href="#" className="text-white hover:font-bold hover:text-yellow-500 mr-10">Project</a></li>
+                    <li><a href="#profile" className="text-white hover:font-bold hover:text-yellow-500 mr-5">Profile</a></li>
+                    <li><a href="#project" className="text-white hover:font-bold hover:text-yellow-500 mr-5">Project</a></li>
+                    <li><a href="#certificate" className="text-white hover:font-bold hover:text-yellow-500 mr-10">Certificate</a></li>
                 </ul>
             </div>
 
             {/* Mobile Menu */}
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden mt-3">
-                    <li className="py-1 ml-10"><a href="#" className="text-white hover:font-bold hover:text-yellow-500">Home</a></li>
-                    <li className="py-1 ml-10"><a href="#" className="text-white hover:font-bold hover:text-yellow-500">Profile</a></li>
-                    <li className="py-1 ml-10"><a href="#" className="text-white hover:font-bold hover:text-yellow-500">Services</a></li>
-                    <li className="py-1 ml-10"><a href="#" className="text-white hover:font-bold hover:text-yellow-500  ">Contact</a></li>
+                    <li className="py-1 ml-10"><a href="#profile" className="text-white hover:font-bold hover:text-yellow-500">Profile</a></li>
+                    <li className="py-1 ml-10"><a href="#project" className="text-white hover:font-bold hover:text-yellow-500">Project</a></li>
+                    <li className="py-1 ml-10"><a href="#certificate" className="text-white hover:font-bold hover:text-yellow-500  ">Certificate</a></li>
                 </ul>
             ) : null}
 

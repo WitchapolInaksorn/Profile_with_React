@@ -3,7 +3,7 @@ import { FaHandsClapping } from "react-icons/fa6";
 
 function Profile() {
   return (
-    <div className='py-28'>
+    <div id='profile' className='py-28'>
       <div className="container mx-auto flex items-center">
         <div className='w-1/2'>
           <img
@@ -24,7 +24,7 @@ function Profile() {
           <p className='text-gray-800 text-lg font-normal leading-relaxed mb-5'>
             I've been learning to code for 4 years, after I started studying computer science.
             <br />
-            I'm looking for an internship related to automated Front-End Development or Testing.
+            I'm looking for an internship related to Mobile Application or Front-End Development.
           </p>
           <ul className='font-normal text-lg text-gray-800 mb-5'>
             <li>

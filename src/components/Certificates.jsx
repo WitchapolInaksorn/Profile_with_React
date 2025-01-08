@@ -2,7 +2,7 @@ import React from 'react';
 
 function Certificates() {
   return (
-    <div>
+    <div id='certificate'>
       <div className='py-16 bg-gray-800'>
         <div className="container mx-auto text-center px-4">
           <div className="text-3xl font-bold text-yellow-600">
@@ -41,6 +41,7 @@ function Certificates() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
